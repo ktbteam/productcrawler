@@ -1,0 +1,46 @@
+# Ten cua workflow, hien thi tren tab Actions cua GitHub
+name: KTB Product Crawler
+
+# Dieu kien de kich hoat workflow
+on:
+  workflow_dispatch:
+  schedule:
+    # Chay moi 6 tieng mot lan
+    - cron: "*/3 0-16 * * *"
+
+# Dinh nghia cac cong viec can thuc hien
+jobs:
+  Product-Crawl:
+    # Su dung may ao Ubuntu moi nhat de chay
+    runs-on: ubuntu-latest
+    steps:
+      # --- THAY ĐỔI QUAN TRỌNG Ở ĐÂY ---
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        with:
+          # Cung cấp PAT để action có quyền push
+          # Các bước sau sẽ kế thừa quyền này
+          token: ${{ secrets.CHANKTB_PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Run crawler script
+        env:
+          # Vẫn cần truyền các biến này cho script Python sử dụng
+          CHANKTB_PAT: ${{ secrets.CHANKTB_PAT }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python crawler/productcrawler.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update crawl data from GitHub Actions"
+          commit_user_name: chanktb (via GitHub Actions)
+          commit_user_email: 4204179+chanktb@users.noreply.github.com
