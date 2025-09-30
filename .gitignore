@@ -1,0 +1,20 @@
+# Môi trường Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*build/
+*dist/
+*venv/
+*env/
+
+# File biến môi trường
+.env
+
+productcrawler.log
+
+# Các file tạm thời khác
+*.tmp
+*.bat
+*.sh
+crawl.tmp.log
