@@ -1,0 +1,114 @@
+{
+    "use_proxy": false,
+    "proxy_url_template": "https://cors-proxy.trantpu.workers.dev/?url={url}",
+    "sites": [
+        {
+            "url": "https://berrylittles.com/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://dreameshirt.com/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://eteeshirts.com/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://geekteesus.com/",
+            "selector": ".row.large-columns-5.medium-columns-3.small-columns-2.row-xsmall a.woocommerce-LoopProduct-link.woocommerce-loop-product__link"
+        },
+        {
+            "url": "https://geekteesus.com/ornament/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://geekteesus.com/new-arrival-shirts/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://geekteesus.com/best-items-today/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://geekteesus.com/trending-t-shirt/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://legendusashirt.com/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://meredpremium.com/",
+            "selector": ".row.large-columns-4.medium-columns-3.small-columns-2.row-small.slider.row-slider.slider-nav-reveal.slider-nav-push a.woocommerce-LoopProduct-link.woocommerce-loop-product__link"
+        },
+        {
+            "url": "https://milkywayshirt.com/",
+            "selector": ".product-small a.woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://nowbestshirt.com/",
+            "selector": ".row.large-columns-5.medium-columns-3.small-columns-2.row-small.slider.row-slider.slider-nav-reveal a.woocommerce-LoopProduct-link.woocommerce-loop-product__link"
+        },
+        {
+            "url": "https://orionshirt.com/",
+            "selector": ".product-small a.woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://serenashirt.com/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://techteesusa.com/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://teeextra.com/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://teespix.com/",
+            "selector": ".section .row.large-columns-4.medium-columns-3.small-columns-2.row-small.slider.row-slider.slider-nav-reveal a.woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://teeworksusa.com/",
+            "selector": "a.porto-tb-link"
+        },
+        {
+            "url": "https://teeslocal.com/best-item-today/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://teeslocal.com/new-arrivals/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://teeslocal.com/latest-products/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://teeslocal.com/graphic-t-shirt/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://teeslocal.com/t-shirts/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://teleteeshirt.com/",
+            "selector": "a.woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://newsfashionshirt.com/",
+            "selector": "a.woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://nemoshirt.com/new-arrivals/",
+            "selector": "a.woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://readyoctober.com/",
+            "selector": "a.product-image-link"
+        }
+    ]
+}
